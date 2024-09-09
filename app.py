@@ -29,7 +29,7 @@ turtle.hideturtle()
 
 # score
 score = 0;
-delay = 0,1
+delay = 0.1
 
 # snake
 snake = turtle.Turtle()
@@ -135,7 +135,7 @@ while True:
     snake_move()
 
     # snake and border collision
-    if snake.xcor() > 280 or snake.xcor() < -300 or snake.ycor() > 240 or snake.ycor() > -240:
+    if snake.xcor() > 280 or snake.xcor() < -300 or snake.ycor() > 240 or snake.ycor() < -240:
         time.sleep(1)
         screen.clear()
         screen.bgcolor("turquoise")
